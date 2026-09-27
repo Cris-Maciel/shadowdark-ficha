@@ -1,14 +1,14 @@
 {
   "name": "Shadowdark - Ficha PT-BR",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "manifest_version": 1,
-  "description": "Ficha preenchível de Shadowdark em PT-BR, sem automação.",
-  "icon": "/icon.svg",
+  "description": "Ficha preenchível de Shadowdark em português.",
+  "icon": "https://cris-maciel.github.io/shadowdark-ficha/icon.svg",
   "action": {
     "title": "Ficha Shadowdark",
-    "icon": "/icon.svg",
-    "popover": "/index.html",
-    "height": 820,
-    "width": 1200
+    "icon": "https://cris-maciel.github.io/shadowdark-ficha/icon.svg",
+    "popover": "https://cris-maciel.github.io/shadowdark-ficha/",
+    "height": 800,
+    "width": 1100
   }
 }
