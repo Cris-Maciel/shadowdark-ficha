@@ -1,0 +1,14 @@
+{
+  "name": "Shadowdark - Ficha PT-BR",
+  "version": "0.1.0",
+  "manifest_version": 1,
+  "description": "Ficha preenchível de Shadowdark em PT-BR, sem automação.",
+  "icon": "/icon.svg",
+  "action": {
+    "title": "Ficha Shadowdark",
+    "icon": "/icon.svg",
+    "popover": "/index.html",
+    "height": 820,
+    "width": 1200
+  }
+}

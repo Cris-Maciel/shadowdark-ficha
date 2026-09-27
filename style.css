@@ -1,0 +1,71 @@
+:root {
+  --sheet-w: 1313px;
+  --sheet-h: 863px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  overflow: hidden;
+  background: #252525;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#sheet {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--sheet-w);
+  height: var(--sheet-h);
+  transform-origin: center center;
+  background: #fff url("ficha-shadowdark.png") center/100% 100% no-repeat;
+  box-shadow: 0 6px 30px rgba(0,0,0,.38);
+}
+
+.field {
+  position: absolute;
+  margin: 0;
+  padding: 0 4px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  background: transparent;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.05;
+  vertical-align: middle;
+}
+
+.field:hover { background: rgba(255,255,255,.12); }
+.field:focus {
+  background: rgba(255,255,255,.68);
+  border-color: rgba(0,0,0,.28);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.55);
+}
+.field.center { text-align: center; }
+.field.big { font-size: 31px; font-weight: 600; }
+.field.small { font-size: 19px; }
+.field.tiny { font-size: 17px; }
+.field.multiline { padding: 5px 7px; line-height: 1.18; }
+
+#save-indicator {
+  position: fixed;
+  right: 9px;
+  bottom: 7px;
+  color: rgba(255,255,255,.62);
+  font: 12px/1.2 Arial, sans-serif;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s;
+}
+#save-indicator.show { opacity: 1; }
